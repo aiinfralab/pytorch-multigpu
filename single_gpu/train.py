@@ -25,6 +25,7 @@ parser.add_argument('--batch_size', type=int, default=256, help='')
 parser.add_argument('--num_worker', type=int, default=4, help='')
 args = parser.parse_args()
 
+writer = SummaryWriter()
 
 def main():
     best_acc = 0
@@ -78,6 +79,8 @@ def train(net, criterion, optimizer, train_loader, device):
         outputs = net(inputs)
         loss = criterion(outputs, targets)
 
+        writer.add_scalar("Loss/train", loss, batch_idx)
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -98,7 +101,7 @@ def train(net, criterion, optimizer, train_loader, device):
     elapse_time = time.time() - epoch_start
     elapse_time = datetime.timedelta(seconds=elapse_time)
     print("Training time {}".format(elapse_time))
-    
+    writer.flush()    
 
 if __name__=='__main__':
     main()

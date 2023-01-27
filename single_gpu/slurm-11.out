@@ -1,6 +1,0 @@
-NODELIST=34.64.225.90,35.193.103.198
-MASTER_ADDR=
-slurmstepd: error: execve(): python: No such file or directory
-srun: error: 34.64.225.90: task 0: Exited with exit code 2
-slurmstepd: error: execve(): python: No such file or directory
-srun: error: 35.193.103.198: task 1: Exited with exit code 2

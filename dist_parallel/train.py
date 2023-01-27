@@ -37,7 +37,7 @@ parser.add_argument('--world_size', default=1, type=int, help='')
 parser.add_argument('--distributed', action='store_true', help='')
 args = parser.parse_args()
 
-#writer = SummaryWriter()
+writer = SummaryWriter()
 
 gpu_devices = ','.join([str(id) for id in args.gpu_devices])
 os.environ["CUDA_VISIBLE_DEVICES"] = gpu_devices
@@ -112,7 +112,7 @@ def train(net, criterion, optimizer, train_loader, device):
         outputs = net(inputs)
         loss = criterion(outputs, targets)
 
-        #writer.add_scalar("Loss/train", loss, batch_idx)
+        writer.add_scalar("Loss/train", loss, batch_idx)
         
         optimizer.zero_grad()
         loss.backward()
@@ -134,7 +134,7 @@ def train(net, criterion, optimizer, train_loader, device):
     elapse_time = time.time() - epoch_start
     elapse_time = datetime.timedelta(seconds=elapse_time)
     print("Training time {}".format(elapse_time))
-    #writer.flush()    
+    writer.flush()    
 
 
 if __name__=='__main__':
