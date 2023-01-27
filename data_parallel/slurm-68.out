@@ -1,0 +1,14 @@
+NODELIST=27.122.137.19
+MASTER_ADDR=
+==> Preparing data..
+Files already downloaded and verified
+==> Making model..
+The number of parameters of model is 26970690
+/home/slurm-master/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Epoch: [0/98]| loss: 9.311 | acc: 0.000 | batch time: 15.225s 
+Epoch: [20/98]| loss: 3.193 | acc: 12.323 | batch time: 1.100s 
+Epoch: [40/98]| loss: 2.644 | acc: 16.921 | batch time: 1.106s 
+Epoch: [60/98]| loss: 2.430 | acc: 19.807 | batch time: 1.040s 
+Epoch: [80/98]| loss: 2.307 | acc: 21.549 | batch time: 1.063s 
+Training time 0:02:00.558497

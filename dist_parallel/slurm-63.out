@@ -1,0 +1,38 @@
+NODELIST=27.122.137.19,34.64.225.90
+MASTER_ADDR=
+Use GPU: 1 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Use GPU: 0 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Epoch: [0/196]| loss: 2.334 | acc: 8.594 | batch time: 22.153s 
+Epoch: [20/196]| loss: 2.024 | acc: 24.516 | batch time: 0.873s 
+Epoch: [40/196]| loss: 1.898 | acc: 28.678 | batch time: 0.891s 
+Epoch: [60/196]| loss: 1.827 | acc: 31.032 | batch time: 0.897s 
+Epoch: [80/196]| loss: 1.770 | acc: 33.488 | batch time: 0.939s 
+Epoch: [100/196]| loss: 1.715 | acc: 35.729 | batch time: 0.927s 
+Epoch: [120/196]| loss: 1.663 | acc: 37.816 | batch time: 0.916s 
+Epoch: [140/196]| loss: 1.610 | acc: 39.982 | batch time: 0.918s 
+Epoch: [160/196]| loss: 1.563 | acc: 41.722 | batch time: 0.923s 
+Epoch: [180/196]| loss: 1.518 | acc: 43.560 | batch time: 0.923s 
+Training time 0:03:35.559410
+Epoch: [0/196]| loss: 2.325 | acc: 9.375 | batch time: 22.103s 
+Epoch: [20/196]| loss: 2.017 | acc: 25.186 | batch time: 0.871s 
+Epoch: [40/196]| loss: 1.920 | acc: 27.820 | batch time: 0.881s 
+Epoch: [60/196]| loss: 1.837 | acc: 30.981 | batch time: 0.895s 
+Epoch: [80/196]| loss: 1.767 | acc: 33.603 | batch time: 0.898s 
+Epoch: [100/196]| loss: 1.706 | acc: 35.992 | batch time: 0.925s 
+Epoch: [120/196]| loss: 1.652 | acc: 38.230 | batch time: 0.915s 
+Epoch: [140/196]| loss: 1.603 | acc: 40.226 | batch time: 0.916s 
+Epoch: [160/196]| loss: 1.555 | acc: 42.173 | batch time: 0.922s 
+Epoch: [180/196]| loss: 1.510 | acc: 44.061 | batch time: 0.949s 
+Training time 0:03:35.596073
+srun: error: timeout waiting for task launch, started 1 of 2 tasks
+srun: launch/slurm: launch_p_step_launch: StepId=63.0 aborted before step completely launched.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Timed out waiting for job step to complete

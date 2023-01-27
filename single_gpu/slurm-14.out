@@ -1,0 +1,36 @@
+NODELIST=34.64.225.90,35.193.103.198
+MASTER_ADDR=
+==> Preparing data..
+Files already downloaded and verified
+==> Making model..
+The number of parameters of model is 24253410
+/home/slurm-master/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Traceback (most recent call last):
+  File "train.py", line 104, in <module>
+    main()
+  File "train.py", line 62, in main
+    train(net, criterion, optimizer, train_loader, device)
+  File "train.py", line 78, in train
+    outputs = net(inputs)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/slurm-master/pytorch-multigpu/single_gpu/model.py", line 104, in forward
+    x = self.layer1(x)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/slurm-master/pytorch-multigpu/single_gpu/model.py", line 47, in forward
+    out = self.conv2(out)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/slurm-master/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 274.00 MiB (GPU 0; 14.62 GiB total capacity; 12.03 GiB already allocated; 15.94 MiB free; 13.61 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: 34.64.225.90: task 0: Exited with exit code 1
+slurmstepd: error: *** JOB 14 ON 34.64.225.90 CANCELLED AT 2023-01-24T07:54:49 ***

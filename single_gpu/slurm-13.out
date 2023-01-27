@@ -1,0 +1,7 @@
+NODELIST=34.64.225.90,35.193.103.198
+MASTER_ADDR=
+usage: train.py [-h] [--lr LR] [--resume RESUME] [--batch_size BATCH_SIZE]
+                [--num_worker NUM_WORKER]
+train.py: error: unrecognized arguments: --gpu_devices 0 1 2 3
+srun: error: 34.64.225.90: task 0: Exited with exit code 2
+slurmstepd: error: *** JOB 13 ON 34.64.225.90 CANCELLED AT 2023-01-24T07:53:32 ***

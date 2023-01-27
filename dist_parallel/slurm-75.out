@@ -1,0 +1,34 @@
+NODELIST=34.64.225.90
+MASTER_ADDR=
+Use GPU: 1 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Use GPU: 0 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Epoch: [0/196]| loss: 2.303 | acc: 13.281 | batch time: 3.654s 
+Epoch: [20/196]| loss: 2.013 | acc: 23.214 | batch time: 0.940s 
+Epoch: [40/196]| loss: 1.903 | acc: 27.439 | batch time: 1.009s 
+Epoch: [60/196]| loss: 1.809 | acc: 30.751 | batch time: 1.014s 
+Epoch: [80/196]| loss: 1.741 | acc: 33.546 | batch time: 0.982s 
+Epoch: [100/196]| loss: 1.679 | acc: 36.247 | batch time: 0.983s 
+Epoch: [120/196]| loss: 1.624 | acc: 38.694 | batch time: 1.036s 
+Epoch: [140/196]| loss: 1.574 | acc: 40.896 | batch time: 0.967s 
+Epoch: [160/196]| loss: 1.525 | acc: 42.891 | batch time: 0.972s 
+Epoch: [180/196]| loss: 1.480 | acc: 44.734 | batch time: 0.989s 
+Training time 0:03:25.201159
+Epoch: [0/196]| loss: 2.359 | acc: 7.031 | batch time: 3.632s 
+Epoch: [20/196]| loss: 2.014 | acc: 23.065 | batch time: 0.926s 
+Epoch: [40/196]| loss: 1.887 | acc: 28.144 | batch time: 0.994s 
+Epoch: [60/196]| loss: 1.809 | acc: 31.199 | batch time: 1.001s 
+Epoch: [80/196]| loss: 1.753 | acc: 33.709 | batch time: 0.959s 
+Epoch: [100/196]| loss: 1.693 | acc: 36.332 | batch time: 0.966s 
+Epoch: [120/196]| loss: 1.636 | acc: 38.753 | batch time: 1.024s 
+Epoch: [140/196]| loss: 1.585 | acc: 40.819 | batch time: 0.945s 
+Epoch: [160/196]| loss: 1.535 | acc: 42.760 | batch time: 0.949s 
+Epoch: [180/196]| loss: 1.491 | acc: 44.579 | batch time: 0.966s 
+Training time 0:03:25.203711

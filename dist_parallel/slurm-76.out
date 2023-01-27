@@ -1,0 +1,50 @@
+NODELIST=27.122.137.19
+MASTER_ADDR=
+Use GPU: 2 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Use GPU: 1 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Use GPU: 0 for training
+==> Making model..
+The number of parameters of model is 24253410
+==> Preparing data..
+Files already downloaded and verified
+Epoch: [0/197]| loss: 2.325 | acc: 8.235 | batch time: 5.689s 
+Epoch: [20/197]| loss: 1.998 | acc: 23.922 | batch time: 0.588s 
+Epoch: [40/197]| loss: 1.880 | acc: 29.326 | batch time: 0.643s 
+Epoch: [60/197]| loss: 1.813 | acc: 31.784 | batch time: 0.586s 
+Epoch: [80/197]| loss: 1.749 | acc: 34.452 | batch time: 0.595s 
+Epoch: [100/197]| loss: 1.690 | acc: 36.575 | batch time: 0.615s 
+Epoch: [120/197]| loss: 1.637 | acc: 38.697 | batch time: 0.595s 
+Epoch: [140/197]| loss: 1.581 | acc: 41.018 | batch time: 0.618s 
+Epoch: [160/197]| loss: 1.530 | acc: 43.018 | batch time: 0.587s 
+Epoch: [180/197]| loss: 1.485 | acc: 44.712 | batch time: 0.612s 
+Training time 0:02:19.467144
+Epoch: [0/197]| loss: 2.316 | acc: 9.412 | batch time: 5.370s 
+Epoch: [20/197]| loss: 1.998 | acc: 23.866 | batch time: 0.588s 
+Epoch: [40/197]| loss: 1.872 | acc: 28.436 | batch time: 0.626s 
+Epoch: [60/197]| loss: 1.790 | acc: 31.553 | batch time: 0.585s 
+Epoch: [80/197]| loss: 1.727 | acc: 34.394 | batch time: 0.635s 
+Epoch: [100/197]| loss: 1.678 | acc: 36.366 | batch time: 0.627s 
+Epoch: [120/197]| loss: 1.624 | acc: 38.639 | batch time: 0.668s 
+Epoch: [140/197]| loss: 1.574 | acc: 40.834 | batch time: 0.653s 
+Epoch: [160/197]| loss: 1.524 | acc: 42.945 | batch time: 0.695s 
+Epoch: [180/197]| loss: 1.484 | acc: 44.751 | batch time: 0.605s 
+Training time 0:02:19.500398
+Epoch: [0/197]| loss: 2.293 | acc: 16.471 | batch time: 5.403s 
+Epoch: [20/197]| loss: 1.984 | acc: 26.779 | batch time: 0.601s 
+Epoch: [40/197]| loss: 1.875 | acc: 30.187 | batch time: 0.584s 
+Epoch: [60/197]| loss: 1.792 | acc: 33.308 | batch time: 0.608s 
+Epoch: [80/197]| loss: 1.738 | acc: 35.076 | batch time: 0.628s 
+Epoch: [100/197]| loss: 1.680 | acc: 37.542 | batch time: 0.594s 
+Epoch: [120/197]| loss: 1.625 | acc: 39.611 | batch time: 0.616s 
+Epoch: [140/197]| loss: 1.571 | acc: 41.560 | batch time: 0.615s 
+Epoch: [160/197]| loss: 1.530 | acc: 43.208 | batch time: 0.625s 
+Epoch: [180/197]| loss: 1.484 | acc: 45.024 | batch time: 0.631s 
+Training time 0:02:19.606322

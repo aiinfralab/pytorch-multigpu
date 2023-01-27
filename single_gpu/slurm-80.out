@@ -1,0 +1,5 @@
+NODELIST=35.193.103.198
+MASTER_ADDR=
+srun: error: Task launch for StepId=80.0 failed on node 35.193.103.198: Communication connection failure
+srun: error: Application launch failed: Communication connection failure
+srun: Job step aborted
