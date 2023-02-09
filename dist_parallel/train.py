@@ -1,6 +1,7 @@
 import os
 import time
 import datetime
+import socket
 
 import torch
 import torch.nn as nn
@@ -37,7 +38,7 @@ parser.add_argument('--world_size', default=1, type=int, help='')
 parser.add_argument('--distributed', action='store_true', help='')
 args = parser.parse_args()
 
-writer = SummaryWriter()
+#writer = SummaryWriter()
 
 gpu_devices = ','.join([str(id) for id in args.gpu_devices])
 os.environ["CUDA_VISIBLE_DEVICES"] = gpu_devices
@@ -55,6 +56,10 @@ def main():
 def main_worker(gpu, ngpus_per_node, args):
     args.gpu = gpu
     ngpus_per_node = torch.cuda.device_count()    
+    print("Running node ip : ", socket.gethostbyname(socket.gethostname()))
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect(("google.com", 443))
+    print("Running external ip : ", sock.getsockname()[0])
     print("Use GPU: {} for training".format(args.gpu))
         
     args.rank = args.rank * ngpus_per_node + gpu    
@@ -112,7 +117,7 @@ def train(net, criterion, optimizer, train_loader, device):
         outputs = net(inputs)
         loss = criterion(outputs, targets)
 
-        writer.add_scalar("Loss/train", loss, batch_idx)
+        #writer.add_scalar("Loss/train", loss, batch_idx)
         
         optimizer.zero_grad()
         loss.backward()
@@ -134,7 +139,7 @@ def train(net, criterion, optimizer, train_loader, device):
     elapse_time = time.time() - epoch_start
     elapse_time = datetime.timedelta(seconds=elapse_time)
     print("Training time {}".format(elapse_time))
-    writer.flush()    
+    #writer.flush()    
 
 
 if __name__=='__main__':
